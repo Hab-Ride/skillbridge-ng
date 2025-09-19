@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Request a Trainer | SkillBridge NG</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>SkillBridge NG</h1>
+    <p>Connecting Master Artisans to TVET Schools</p>
+  </header>
+
+  <main>
+    <h2>Request a Trainer for Your School</h2>
+    <p>Connect with verified artisans for hands-on training in your institution.</p>
+
+    <form action="https://formspree.io/f/xblanovb" method="POST">
+      <input type="hidden" name="form_type" value="school_request" />
+
+      <label>School Name: 
+        <input type="text" name="school_name" placeholder="e.g., Yaba College of Technology" required />
+      </label><br/><br/>
+      
+      <label>Requested Trade: 
+        <input type="text" name="requested_trade" placeholder="e.g., Plumbing" required />
+      </label><br/><br/>
+      
+      <label>Location: 
+        <input type="text" name="school_location" placeholder="e.g., Yaba, Lagos" required />
+      </label><br/><br/>
+      
+      <label>Contact Person: 
+        <input type="text" name="contact_person" placeholder="e.g., Mr. Johnson, HOD" required />
+      </label><br/><br/>
+      
+      <label>Email: <input type="email" name="contact_email" required /></label><br/><br/>
+      
+      <label>Phone: <input type="tel" name="contact_phone" required /></label><br/><br/>
+      
+      <label>Preferred Training Duration:
+        <select name="duration">
+          <option value="1 week">1 Week</option>
+          <option value="2 weeks">2 Weeks</option>
+          <option value="1 month">1 Month</option>
+          <option value="ongoing">Ongoing (Monthly)</option>
+        </select>
+      </label><br/><br/>
+
+      <button type="submit">Send Request</button>
+    </form>
+  </main>
+
+  <footer>
+    <p><a href="index.html">← Back Home</a></p>
+  </footer>
+</body>
+</html>
