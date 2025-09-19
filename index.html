@@ -3,87 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SkillBridge Nigeria</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Optional: Add favicon later -->
-  <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+  <title>SkillBridge NG</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #0057b7;
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3em;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      background: #004a99;
+      text-align: center;
+      padding: 0.8em 0;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 1.5em 1em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 2em;
+    }
+
+    .hero h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1em;
+      color: #0057b7;
+    }
+
+    .problem {
+      background: #fff3cd;
+      padding: 1.2em;
+      border-left: 4px solid #ffc107;
+      margin: 1.5em auto;
+      max-width: 900px;
+      font-size: 0.95rem;
+      color: #856404;
+    }
+
+    .solution {
+      background: #d4edda;
+      padding: 1.2em;
+      border-left: 4px solid #28a745;
+      margin: 1.5em auto;
+      max-width: 900px;
+      font-size: 0.95rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    button {
+      background: #00a36c;
+      color: white;
+      border: none;
+      padding: 14px 20px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #007f4f;
+    }
+
+    .impact-stats {
+      background: #0057b7;
+      color: white;
+      text-align: center;
+      padding: 1.5em 1em;
+      margin: 2em auto;
+      border-radius: 8px;
+      max-width: 900px;
+    }
+
+    .impact-stats h3 {
+      margin-bottom: 1em;
+      font-size: 1.3rem;
+    }
+
+    .impact-stats ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .impact-stats li {
+      font-weight: bold;
+      min-width: 130px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5em;
+      background: #eee;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #0057b7;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+      button {
+        min-width: 220px;
+      }
+      .hero h2 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
   <header>
     <h1>SkillBridge NG</h1>
-    <p>Connecting Master Artisans to TVET Schools</p>
+    <p>Reliable Artisans. Verified Skills. Real Training.</p>
   </header>
 
-  <!-- Navigation Menu -->
-  <nav style="text-align:center; margin:10px 0; font-weight:bold;">
-    <a href="index.html">Home</a> |
-    <a href="about.html">About Us</a> |
-    <a href="register-artisan.html">Become a Trainer</a> |
+  <nav>
+    <a href="index.html">Home</a>
     <a href="request-trainer.html">For Schools</a>
+    <a href="register-artisan.html">For Artisans</a>
+    <a href="about.html">About</a>
   </nav>
 
   <main>
     <section class="hero">
-      <p>Welcome to <strong>SkillBridge NG</strong> — linking skilled tradespeople with institutions that need hands-on, real-world training.</p>
-      
+      <h2>Need a Skilled Trainer Who Shows Up?</h2>
+      <p>Schools struggle to find reliable artisans. Many no-show, underperform, or vanish mid-training.</p>
+
       <div class="cta-buttons">
-        <a href="register-artisan.html"><button>Become a Trainer</button></a>
         <a href="request-trainer.html"><button>Schools: Request a Trainer</button></a>
+        <a href="register-artisan.html"><button>Become a Trusted Trainer</button></a>
       </div>
     </section>
 
-    <!-- Impact Stats Section -->
+    <!-- The Problem -->
+    <section class="problem">
+      <strong>The Problem:</strong> Most informal artisans aren't reliable — and schools can't afford training that never happens.
+    </section>
+
+    <!-- Our Solution -->
+    <section class="solution">
+      <strong>Our Solution:</strong> We only connect schools with <strong>pre-vetted, experienced, and dependable</strong> artisans. No more guesswork. Just real skills from real professionals who show up.
+    </section>
+
+    <!-- Impact Stats -->
     <section class="impact-stats">
-      <h3>Our Impact (As of July 2025)</h3>
+      <h3>Trusted by Schools Across Nigeria</h3>
       <ul>
-        <li>🛠️ <strong>14 Artisans</strong> Connected</li>
-        <li>🏫 <strong>6 Schools</strong> Supported</li>
-        <li>🎓 <strong>153 Students</strong> Trained</li>
-        <li>✅ <strong>8 Projects</strong> Completed</li>
+        <li>🛠️ <strong>14 Artisans</strong></li>
+        <li>🏫 <strong>6 Schools</strong></li>
+        <li>🎓 <strong>153 Students</strong></li>
+        <li>✅ <strong>8 Projects</strong></li>
       </ul>
     </section>
 
-    <!-- Success Stories Section -->
-    <section class="success-stories">
-      <h2>✅ Recent Deployments</h2>
-      <p><em>Real connections. Real skills. Real change.</em></p>
-
-      <div class="story">
-        <h3>Welding Training at Yaba College, Lagos</h3>
-        <p><strong>Artisan:</strong> Mr. Tunde Adebayo (TRCN Certified | 10+ Years)</p>
-        <p><strong>School:</strong> Yaba College of Technology</p>
-        <p><strong>Outcome:</strong> 28 students trained in arc welding, metal fabrication, and safety practices over 2 weeks.</p>
-        <p><strong>Feedback:</strong> “Mr. Adebayo was punctual, skilled, and engaging. We’d welcome him again.” – HOD, Engineering Dept.</p>
-      </div>
-
-      <div class="story">
-        <h3>Fashion Design Workshop – Oyo State Polytechnic</h3>
-        <p><strong>Artisan:</strong> Madam Bisi Oladele (NDE-Certified Tailor)</p>
-        <p><strong>School:</strong> The Polytechnic, Ibadan</p>
-        <p><strong>Outcome:</strong> Intensive 10-day program on modern sewing techniques and pattern design.</p>
-        <p><strong>Students:</strong> 22 female trainees gained portfolio-ready skills.</p>
-      </div>
-
-      <div class="center">
-        <p><em>Want to be featured? <a href="deployments.html">Share your story</a> or <a href="request-trainer.html">host a trainer today</a>.</em></p>
-      </div>
-    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 SkillBridge Nigeria. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="about.html">About Us</a> | 
-      <a href="register-artisan.html">Become a Trainer</a> | 
-      <a href="request-trainer.html">For Schools</a>
-    </div>
-    <div class="social-links">
-      Follow us: 
-      <a href="https://facebook.com/skillbridgeNG" target="_blank">Facebook</a> | 
-      <a href="https://instagram.com/skillbridgeNG" target="_blank">Instagram</a> | 
-      <a href="https://twitter.com/skillbridgeNG" target="_blank">Twitter/X</a>
-    </div>
+    <p><a href="about.html">About Us</a> | <a href="https://x.com/skillbridgeNG" target="_blank">X (Twitter)</a></p>
   </footer>
 
 </body>
