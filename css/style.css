@@ -1,35 +1,109 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
-}
-
-header {
-  background: #0057b7;
-  color: white;
-  text-align: center;
-  padding: 1em;
-}
-
+/* Main Layout */
 main {
   padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
   text-align: center;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  margin-top: 20px;
 }
 
 button {
-  background: #00a36c;
+  background: #0057b7;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
   font-size: 16px;
   cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
+button:hover {
+  background: #003f7f;
+}
+
+/* Impact Stats */
+.impact-stats {
+  background: #0057b7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 8px;
+  max-width: 900px;
+}
+
+.impact-stats ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.impact-stats li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Success Stories */
+.success-stories {
+  background: #e6f7ff;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 8px;
+  max-width: 900px;
+  font-size: 16px;
+}
+
+.story {
+  background: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #0057b7;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.story h3 {
+  margin-top: 0;
+  color: #0057b7;
+}
+
+.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1em;
   background: #eee;
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+  color: #555;
+}
+
+.social-links {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+footer a {
+  color: #0057b7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
