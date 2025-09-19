@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+
   <header>
     <h1>SkillBridge NG</h1>
     <p>Connecting Master Artisans to TVET Schools</p>
@@ -17,15 +18,26 @@
     <p>Share your expertise with students in technical schools across Nigeria.</p>
 
     <form action="https://formspree.io/f/xblanovb" method="POST">
-      <label>Name: <input type="text" name="name" required /></label><br/><br/>
+      <label>Name: 
+        <input type="text" name="name" required />
+      </label><br/><br/>
+
       <label>Trade (e.g., Welding, Carpentry): 
         <input type="text" name="trade" placeholder="e.g., Electrical Installation" required />
       </label><br/><br/>
+
       <label>Location: 
         <input type="text" name="location" placeholder="e.g., Surulere, Lagos" required />
       </label><br/><br/>
-      <label>Phone: <input type="tel" name="phone" required /></label><br/><br/>
-      <label>Email: <input type="email" name="email" /></label><br/><br/>
+
+      <label>Phone: 
+        <input type="tel" name="phone" required />
+      </label><br/><br/>
+
+      <label>Email: 
+        <input type="email" name="email" />
+      </label><br/><br/>
+
       <label>Years of Experience: 
         <select name="experience" required>
           <option value="">Select...</option>
@@ -35,12 +47,18 @@
           <option value="10+ years">10+ years</option>
         </select>
       </label><br/><br/>
+
       <button type="submit">Submit Registration</button>
+
+      <p style="font-size:0.9rem; color:#555; margin-top:10px;">
+        <em>By submitting, you agree to provide accurate information. We verify all artisans before connecting them to schools.</em>
+      </p>
     </form>
   </main>
 
   <footer>
     <p><a href="index.html">← Back Home</a></p>
   </footer>
+
 </body>
 </html>
